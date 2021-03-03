@@ -1,6 +1,6 @@
 module.exports = (bot) => {
-    const channelId = '797615227611906109'
-    const targetChannelId = '797615227611906109'
+    const channelId = '816420776437088303'
+    const targetChannelId = '816420776437088303'
 
     bot.on('guildMemberAdd', (member) => {
         console.log(member)
