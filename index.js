@@ -4,7 +4,7 @@ const token = "ODE2Nzg0OTI0NTkzNzUwMDQ3.YEAAPQ.H8vkdBZ5CrlOFqhJEqQ_uNPgSbk";
 const prefix = "*";
 
 
-bot.embeds = require(`./embeds/${file}`);
+bot.embeds = require(`./embeds/`);
 const fs = require('fs');
 bot.commands = new Discord.Collection();
 
