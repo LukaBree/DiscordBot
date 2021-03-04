@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'say',
+    name: 'glasaj',
     description: "Govori Komande",
     execute(message, args, Discord){
         message.delete();
