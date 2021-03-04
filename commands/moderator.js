@@ -17,5 +17,8 @@ module.exports = {
         .setFooter('Bota napravio Lukaa#1317');
         if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(noAdmin);
         message.channel.send(komande)
+
+        const noAdmin = new Discord.MessageEmbed()
+        .setTitle('Nisi Administrator!')
     }
 }

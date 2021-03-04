@@ -16,8 +16,5 @@ module.exports = {
         .setTimestamp()
         .setFooter('Bota napravio Lukaa#1317');
         message.channel.send(komande)
-
-        const noAdmin = new Discord.MessageEmbed()
-        .setTitle('Nisi Administrator!')
     }
 }
