@@ -6,7 +6,6 @@ const prefix = "*";
 const fs = require('fs');
 bot.commands = new Discord.Collection();
 
-const welcome = require('./welcome')
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
@@ -17,6 +16,14 @@ for(const file of commandFiles){
 bot.on('ready', () => {
     console.log("ucitano");
     bot.user.setActivity('karam drvo');
+});
+
+
+bot.on('guildMemberAdd', guildMember =>{
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'members');
+
+    guildMember.roles.add(welcomeRole);
+    guildMember.guild.channels.cache.get('').send(`Pozdravite <@${guildMember.user,id}> pre svega budi covek`)
 });
 
 
