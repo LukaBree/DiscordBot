@@ -10,9 +10,11 @@ module.exports = {
             {name: '*komande', value: 'Govori komande'},
             {name: '*info', value: 'Info bota'},
             {name: '*moderator', value: 'Govori komande moderatora'},
+            {name: '*ping', value: 'Govori ping bota'},
 
         )
-
+        .setTimestamp()
+        .setFooter('Bota napravio Lukaa#1317');
         message.channel.send(komande)
     }
 }
