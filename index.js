@@ -4,9 +4,13 @@ const token = "ODE2Nzg0OTI0NTkzNzUwMDQ3.YEAAPQ.H8vkdBZ5CrlOFqhJEqQ_uNPgSbk";
 const prefix = "*";
 
 
-bot.embeds = require(`./embeds/`);
 const fs = require('fs');
 bot.commands = new Discord.Collection();
+
+
+
+bot.embeds = require(`./embeds/noAdmin.js`);
+
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
