@@ -3,6 +3,8 @@ const bot = new Discord.Client();
 const token = "ODE2Nzg0OTI0NTkzNzUwMDQ3.YEAAPQ.H8vkdBZ5CrlOFqhJEqQ_uNPgSbk";
 const prefix = "*";
 
+
+const memberCounter = require('./counters/member-counter');
 const fs = require('fs');
 bot.commands = new Discord.Collection();
 
@@ -16,6 +18,7 @@ for(const file of commandFiles){
 bot.on('ready', () => {
     console.log("ucitano");
     bot.user.setActivity('Gledam Urosa');
+    memberCounter(bot);
 });
 
 
