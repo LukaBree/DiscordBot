@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const token = "ODE2Nzg0OTI0NTkzNzUwMDQ3.YEAAPQ.H8vkdBZ5CrlOFqhJEqQ_uNPgSbk";
 const prefix = "*";
 
-bot.embeds = require('./embeds.js');
+
 const fs = require('fs');
 bot.commands = new Discord.Collection();
 
@@ -47,6 +47,8 @@ bot.on('message', message => {
         bot.commands.get('kick').execute(message, args, Discord);
     }  else if (command === 'clear'){
         bot.commands.get('clear').execute(message, args, Discord);
+    }  else if (command === 'komande'){
+        bot.commands.get('komande').execute(message, args, Discord);
     }
           
 });
