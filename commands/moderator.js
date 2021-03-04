@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'komande',
+    name: 'moderator',
     description: "Govori Komande",
     execute(message, args, Discord){
         const komande = new Discord.MessageEmbed()
