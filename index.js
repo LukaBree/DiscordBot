@@ -54,6 +54,8 @@ bot.on('message', message => {
         bot.commands.get('komande').execute(message, args, Discord);
     }  else if (command === 'moderator'){
         bot.commands.get('moderator').execute(message, args, Discord);
+    }  else if (command === 'say'){
+        bot.commands.get('say').execute(message, args, Discord);
     }
           
 });
