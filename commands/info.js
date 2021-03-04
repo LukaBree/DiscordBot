@@ -7,9 +7,9 @@ module.exports = {
         .setTitle('INFO')
         .setDescription('Staff Team na ovom discordu')
         .addFields(
-            {name: 'urke98#6886', value: 'Vlasnik'},
-            {name: 'Lukaa#1317', value: 'Glavni Admin'},
-            {name: 'vuk77765#1694', value: 'Moderator'},
+            {name: 'Vlasnik', value: 'urke98#6886'},
+            {name: 'Glavni Admin', value: 'Luka#1317'},
+            {name: 'Moderator', value: 'vuk77765#1694'},
         )
         .setTimestamp()
         .setFooter('Bota napravio Lukaa#1317');
