@@ -15,7 +15,7 @@ for(const file of commandFiles){
 
 bot.on('ready', () => {
     console.log("ucitano");
-    bot.user.setActivity('karam drvo');
+    bot.user.setActivity('Gledam Urosa');
 });
 
 
