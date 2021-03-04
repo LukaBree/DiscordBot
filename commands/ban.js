@@ -8,6 +8,7 @@ module.exports = {
           // Now we get the member from the user
           const member = message.guild.member(user);
           // If the member is in the guild
+          if(!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send(client.embeds.config.noAdmin());
           if (member) {
             /**
              * Ban the member
