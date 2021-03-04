@@ -2,6 +2,7 @@ module.exports = {
     name: 'komande',
     description: "Govori Komande",
     execute(message, args, Discord){
+        if(!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send(client.embeds.config.noAdmin());
         const komande = new Discord.MessageEmbed()
         .setColor('0x950765')
         .setTitle('Komande')
@@ -16,8 +17,5 @@ module.exports = {
         .setTimestamp()
         .setFooter('Bota napravio Lukaa#1317');
         message.channel.send(komande)
-
-        const noAdmin = new Discord.MessageEmbed()
-        .setTitle('Nisi Administrator!')
     }
 }

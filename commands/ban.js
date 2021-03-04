@@ -1,7 +1,7 @@
 module.exports = {
     name: 'kick',
     description: "Moze da kika",
-    execute(message, args){
+    execute(message, args, Discord){
         const user = message.mentions.users.first();
         // If we have a user mentioned
         if (user) {
