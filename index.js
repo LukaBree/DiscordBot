@@ -15,10 +15,12 @@ for(const file of commandFiles){
     bot.commands.set(command.name, command);
 }
 
-bot.on('ready', () => {
-    console.log("ucitano");
-    bot.user.setActivity('Uroš Na Oprezu');
-});
+bot.on('ready', () =>{
+    console.log('Bot je online');
+    bot.user.setActivity('Uros Na Oprezu | Keva ga kune za 2 iz engleskog', { type: 'PLAYING'}).catch(console.error);
+ 
+ });
+ 
 
 
 bot.on('guildMemberAdd', guildMember =>{
