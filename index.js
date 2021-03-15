@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = "ODE2Nzg0OTI0NTkzNzUwMDQ3.YEAAPQ.H8vkdBZ5CrlOFqhJEqQ_uNPgSbk";
-const prefix = "*";
+const prefix = "/";
 
 
 const fs = require('fs');
@@ -17,7 +17,7 @@ for(const file of commandFiles){
 
 bot.on('ready', () =>{
     console.log('Bot je online');
-    bot.user.setActivity('Uros Na Oprezu | Keva ga kune za 2 iz engleskog', { type: 'PLAYING'}).catch(console.error);
+    bot.user.setActivity('Uros Na Oprezu | Keva ne kune ', { type: 'WATCHING'}).catch(console.error);
  
  });
  
