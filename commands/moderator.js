@@ -7,15 +7,16 @@ module.exports = {
         .setTitle('Komande')
         .setDescription('Prefix *')
         .addFields(
-            {name: '*komande', value: 'Govori komande'},
-            {name: '*info', value: 'Info bota'},
-            {name: '*moderator', value: 'Govori komande moderatora'},
-            {name: '*ping', value: 'Govori ping bota'},
+            {name: '/komande', value: 'Govori komande'},
+            {name: '/info', value: 'Info bota'},
+            {name: '/moderator', value: 'Govori komande moderatora'},
+            {name: '/ping', value: 'Govori ping bota'},
 
         )
         .setTimestamp()
         .setFooter('Bota napravio Lukaa#1317');
-        if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply('Nemas premisiju za to!'),message.react(':x:');
+        if(!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send(client.embeds.config.noAdmin()),message.react(':x:');
+        msg.author.sendMessage(komande) 
         message.channel.send(komande)
     }
 }
