@@ -15,7 +15,7 @@ module.exports = {
         )
         .setTimestamp()
         .setFooter('Bota napravio Lukaa#1317');
-        if(!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send(client.embeds.config.noAdmin());
+        if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(noAdmin);
         message.author.sendMessage(komande) 
         message.channel.send(komande)
     }
