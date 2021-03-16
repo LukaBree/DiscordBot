@@ -12,5 +12,6 @@ module.exports = {
             var text = message.content.split(' ').slice(1).join(' ');
             if(!text) return message.reply('Moras da kazes nesto');
             message.channel.send(text);
+    
     }
 }
