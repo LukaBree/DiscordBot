@@ -12,6 +12,7 @@ module.exports = {
             {name: '$say', value: 'Kazes nesto koristeci bota'},
             {name: '$glasaj', value: 'Glasas'},
             {name: '$clear', value: 'Brises poruke sa botom. Ali pazi da ne zajebes nesto posto maksimalno mozes 100 poruka da obrises!'},
+            {name: '$reci', value: 'Kazes nesto koristeci bota'},
 
         )
         .setTimestamp()
