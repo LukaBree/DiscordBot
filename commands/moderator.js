@@ -5,12 +5,13 @@ module.exports = {
         const modhelp = new Discord.MessageEmbed()
         .setColor('0x950765')
         .setTitle('Komande')
-        .setDescription('Prefix *')
+        .setDescription('Prefix /')
         .addFields(
-            {name: '/komande', value: 'Govori komande'},
-            {name: '/info', value: 'Info bota'},
-            {name: '/moderator', value: 'Govori komande moderatora'},
-            {name: '/ping', value: 'Govori ping bota'},
+            {name: '/ban', value: 'Banujes igraca.'},
+            {name: '/kick', value: 'Kikujes Igraca'},
+            {name: '/say', value: 'Kazes nesto koristeci bota'},
+            {name: '/glasaj', value: 'Glasas'},
+            {name: '/clear', value: 'Brises poruke sa botom. Ali pazi da ne zajebes nesto posto maksimalno mozes 100 poruka da obrises!'},
 
         )
         .setTimestamp()

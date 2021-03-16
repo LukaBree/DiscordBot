@@ -15,6 +15,7 @@ module.exports = {
         )
         .setTimestamp()
         .setFooter('Bota napravio Lukaa#1317');
-        message.channel.send(komande)
+        message.author.send(komande);
+        message.channel.send('Pogledaj DM')
     }
 }
