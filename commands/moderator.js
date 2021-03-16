@@ -15,7 +15,7 @@ module.exports = {
         )
         .setTimestamp()
         .setFooter('Bota napravio Lukaa#1317');
-        if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(noAdmin);
+        if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply('Nemas Permisije!'),message.react('😡');
         message.author.send(modhelp);
         message.channel.send('Pogledaj DM')
     }
