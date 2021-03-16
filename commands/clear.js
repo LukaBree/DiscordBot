@@ -4,6 +4,7 @@ module.exports = {
     name: "clear",
     description: "Clear",
     async execute(message, args, Discord) {
+        if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply('Nemas Permisije!'),message.react('😡');
         if(!args[0]) return message.reply("Napisi koliko zelis da clearas");
         if(isNaN(args[0])) return message.reply("Napisi realan broj do 100");
 

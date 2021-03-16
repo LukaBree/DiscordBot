@@ -7,7 +7,7 @@ module.exports = {
         if (user) {
 
           const member = message.guild.member(user);
-          if(!msg.member.hasPermission("ADMINISTRATOR")) return msg.channel.send(client.embeds.config.noAdmin());
+          if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply('Nemas Permisije!'),message.react('😡');
           if (member) {
             member
               .kick('Optional reason that will display in the audit logs')

@@ -9,7 +9,7 @@ module.exports = {
         .setTitle(`${text}`)
 
         try{
-            if(!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send(noAdmin);
+            if(!message.member.hasPermission("ADMINISTRATOR")) return message.reply('Nemas Permisije!'),message.react('😡');
             message.channel.send(sayEmbed);
             return
         }catch(e){

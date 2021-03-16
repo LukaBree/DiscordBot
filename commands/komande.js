@@ -5,12 +5,12 @@ module.exports = {
         const komande = new Discord.MessageEmbed()
         .setColor('0x950765')
         .setTitle('Komande')
-        .setDescription('Prefix *')
+        .setDescription('Prefix /')
         .addFields(
-            {name: '*komande', value: 'Govori komande'},
-            {name: '*info', value: 'Info bota'},
-            {name: '*moderator', value: 'Govori komande moderatora'},
-            {name: '*ping', value: 'Govori ping bota'},
+            {name: '/komande', value: 'Govori komande'},
+            {name: '/info', value: 'Info bota'},
+            {name: '/moderator', value: 'Govori komande moderatora'},
+            {name: '/ping', value: 'Govori ping bota'},
 
         )
         .setTimestamp()
