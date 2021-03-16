@@ -17,7 +17,7 @@ for(const file of commandFiles){
 
 bot.on('ready', () =>{
     console.log('Bot je online');
-    bot.user.setActivity('Uros Na Oprezu | Keva ne kune ', { type: 'WATCHING'}).catch(console.error);
+    bot.user.setActivity('Uros Na Oprezu | Keva ne kune | $komande', { type: 'STREAMING'}).catch(console.error);
  
  });
  
