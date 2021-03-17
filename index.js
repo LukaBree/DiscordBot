@@ -27,7 +27,7 @@ bot.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'members');
 
     guildMember.roles.add(welcomeRole);
-    guildMember.guild.channels.cache.get('816420776437088303').send(`Dobrodosao <@${guildMember.user.id}>`)
+    guildMember.guild.channels.cache.get('816420776437088303').send(`Dobrodosao <@${guildMember.user.id}> na server. Procitaj pravila!`)
 });
 
 
