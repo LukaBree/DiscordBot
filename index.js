@@ -28,9 +28,8 @@ bot.on('guildMemberAdd', guildMember =>{
 
     guildMember.roles.add(welcomeRole);
     let dobrodosao = new Discord.MessageEmbed()
-    .setTitle('Novi Igrac')
-    .setDescription(`<@${guildMember.user.id}> je usao na server!`)
-    .setColor("ORANGE")
+    .setDescription(`<@${guildMember.user.id}> je usao na server! Procitaj Pravila!`)
+    .setColor("RANDOM")
     .setTimestamp()
     guildMember.guild.channels.cache.get('816420776437088303').send(dobrodosao)
 });
