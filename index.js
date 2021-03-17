@@ -29,7 +29,7 @@ bot.on('guildMemberAdd', guildMember =>{
     guildMember.roles.add(welcomeRole);
     let dobrodosao = new Discord.MessageEmbed()
     .setTitle('Novi Igrac')
-    .setDescription(`${member.user.tag} je usao na server!`)
+    .setDescription(`<@${guildMember.user.id}> je usao na server!`)
     .setColor("ORANGE")
     .setTimestamp()
     guildMember.guild.channels.cache.get('816420776437088303').send(dobrodosao)
