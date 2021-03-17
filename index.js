@@ -34,6 +34,17 @@ bot.on('guildMemberAdd', guildMember =>{
     guildMember.guild.channels.cache.get('816420776437088303').send(dobrodosao)
 });
 
+bot.on('guildMemberRemove', guildMember =>{
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'members');
+
+    guildMember.roles.add(welcomeRole);
+    let dobrodosao = new Discord.MessageEmbed()
+    .setDescription(`<@${guildMember.user.id}> je izasao sa servera!`)
+    .setColor("RANDOM")
+    .setTimestamp()
+    guildMember.guild.channels.cache.get('816420776437088303').send(dobrodosao)
+});
+
 
 bot.on('message', message => {
 
