@@ -75,6 +75,8 @@ bot.on('message', message => {
         bot.commands.get('glasaj').execute(message, args, Discord);
     }  else if (command === 'reci'){
         bot.commands.get('reci').execute(message, args, Discord);
+    }  else if (command === 'pravila'){
+        bot.commands.get('pravila').execute(message, args, Discord);
     }
           
 });
