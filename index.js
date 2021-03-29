@@ -17,7 +17,7 @@ for(const file of commandFiles){
 
 bot.on('ready', () =>{
     console.log(`Bot je online, ulogovao sam se na ${bot.user.tag}!`);
-    bot.user.setActivity('Uros Na Oprezu | Keva ne kune | $komande', { type: 'PLAYING'}).catch(console.error);
+    bot.user.setActivity('Uros Na Oprezu | KEVA KUNE | $komande', { type: 'PLAYING'}).catch(console.error);
  
  });
  
@@ -29,7 +29,7 @@ bot.on('guildMemberAdd', guildMember =>{
     guildMember.roles.add(welcomeRole);
     let dobrodosao = new Discord.MessageEmbed()
     .setDescription(`<@${guildMember.user.id}> je usao na server! Procitaj Pravila!`)
-    .setColor("RANDOM")
+    .setColor("RED")
     .setTimestamp()
     guildMember.guild.channels.cache.get('816420776437088303').send(dobrodosao)
 });
