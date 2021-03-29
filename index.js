@@ -24,7 +24,7 @@ bot.on('ready', () =>{
 
 
 bot.on('guildMemberAdd', guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'members');
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === '🧿members🧿');
 
     guildMember.roles.add(welcomeRole);
     let dobrodosao = new Discord.MessageEmbed()
