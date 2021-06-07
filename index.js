@@ -24,14 +24,20 @@ bot.on('ready', () =>{
 
 
 bot.on('guildMemberAdd', guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === '🧿members🧿');
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === '👨・Member');
 
     guildMember.roles.add(welcomeRole);
     let dobrodosao = new Discord.MessageEmbed()
-    .setDescription(`<@${guildMember.user.id}> je usao na server! Procitaj Pravila!`)
+    .setDescription(`Cao <@${guildMember.user.id}> dobrodosao/la na Neptune™:slight_smile:
+
+    Ako mozes invite svoje prijatelje/prijateljice:pray:
+    
+    Udji u self roles iuzmi neke rolove
+    
+    Obavezno procitaj pravila(rules)`)
     .setColor("RED")
     .setTimestamp()
-    guildMember.guild.channels.cache.get('816420776437088303').send(dobrodosao)
+    guildMember.guild.channels.cache.get('835819726928085023').send(dobrodosao)
 });
 
 bot.on('guildMemberRemove', guildMember =>{
@@ -42,7 +48,7 @@ bot.on('guildMemberRemove', guildMember =>{
     .setDescription(`<@${guildMember.user.id}> je izasao sa servera!`)
     .setColor("RANDOM")
     .setTimestamp()
-    guildMember.guild.channels.cache.get('816420777104375832').send(izasao)
+    guildMember.guild.channels.cache.get('832953372021751818').send(izasao)
 });
 
 
