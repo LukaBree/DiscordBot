@@ -17,7 +17,7 @@ for(const file of commandFiles){
 
 bot.on('ready', () =>{
     console.log(`Bot je online, ulogovao sam se na ${bot.user.tag}!`);
-    bot.user.setActivity('Uros Na Oprezu | KEVA KUNE | $komande', { type: 'PLAYING'}).catch(console.error);
+    bot.user.setActivity('Uros Na Oprezu | KRAJ SKOLSKE GODINE | $komande', { type: 'PLAYING'}).catch(console.error);
  
  });
  
