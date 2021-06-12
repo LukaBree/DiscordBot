@@ -3,9 +3,9 @@ module.exports = {
     description: "Govori Pravila",
     execute(message, args, Discord){
         const pravila = new Discord.MessageEmbed()
-        .setColor('0x950765')
+        .setColor('RED')
         .setTitle('INFO')
-        .setDescription('Pravila na Dangerous server')
+        .setDescription('Pravila na Dangerous server', 'Mute na 1 dan, pa sledi ban!')
         .addField('Zabranjeno je Vredjanje na osnovu nacionalizma ili obicno vredjanje.')
         .addField('Zabranjeno je Reklamiranje drugih discord servera.', 'Mute na 1 dan, pa sledi kick!')
         .addField('Zabranjeno je Vikanje u Voice-u.', 'Kick, pa Ban!')
