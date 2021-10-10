@@ -65,15 +65,15 @@ bot.on('message', message => {
         bot.commands.get('kick').execute(message, args, Discord);
     }  else if (command === 'clear'){
         bot.commands.get('clear').execute(message, args, Discord);
-    }  else if (command === 'komande'){
+    }  else if (command === 'komande1'){
         bot.commands.get('komande').execute(message, args, Discord);
     }  else if (command === 'moderator'){
         bot.commands.get('moderator').execute(message, args, Discord);
-    }  else if (command === 'say'){
+    }  else if (command === 'lukasay'){
         bot.commands.get('say').execute(message, args, Discord);
     }  else if (command === 'glasaj'){
         bot.commands.get('glasaj').execute(message, args, Discord);
-    }  else if (command === 'reci'){
+    }  else if (command === 'lukareci'){
         bot.commands.get('reci').execute(message, args, Discord);
     }  else if (command === 'pravila'){
         bot.commands.get('pravila').execute(message, args, Discord);
