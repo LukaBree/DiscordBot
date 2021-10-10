@@ -17,14 +17,14 @@ for(const file of commandFiles){
 
 bot.on('ready', () =>{
     console.log(`Bot je online, ulogovao sam se na ${bot.user.tag}!`);
-    bot.user.setActivity('Uros Na Oprezu | KRAJ SKOLSKE GODINE | $komande', { type: 'PLAYING'}).catch(console.error);
+    bot.user.setActivity('STEFAN CIGAN | IDE GAS | $komande', { type: 'PLAYING'}).catch(console.error);
  
  });
  
 
 
 bot.on('guildMemberAdd', guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === '👨・Member');
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === '✏️| 8/3');
 
     guildMember.roles.add(welcomeRole);
     let dobrodosao = new Discord.MessageEmbed()
@@ -37,7 +37,7 @@ bot.on('guildMemberAdd', guildMember =>{
     Obavezno procitaj pravila <#<#832956329902866462> `)
     .setColor("RED")
     .setTimestamp()
-    guildMember.guild.channels.cache.get('835819726928085023').send(dobrodosao)
+    guildMember.guild.channels.cache.get('896805983274299402').send(dobrodosao)
 });
 
 bot.on('guildMemberRemove', guildMember =>{
