@@ -37,9 +37,7 @@ bot.on('guildMemberAdd', guildMember =>{
 });
 
 bot.on('guildMemberRemove', guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === '✏️| 8/3');
-
-    guildMember.roles.add(welcomeRole);
+    
     let izasao = new Discord.MessageEmbed()
     .setDescription(`<@${guildMember.user.id}> je izasao sa servera!`)
     .setColor("RANDOM")
