@@ -5,7 +5,7 @@ module.exports = {
         const pravila = new Discord.MessageEmbed()
         .setColor('RED')
         .setTitle('INFO')
-        .setDescription('Pravila na Dangerous server', 'Mute na 1 dan, pa sledi ban!')
+        .setDescription('Pravila u hudu ', 'Mute na 1 dan, pa sledi ban!')
         .addField('Zabranjeno je Vredjanje na osnovu nacionalizma ili obicno vredjanje.')
         .addField('Zabranjeno je Reklamiranje drugih discord servera.', 'Mute na 1 dan, pa sledi kick!')
         .addField('Zabranjeno je Vikanje u Voice-u.', 'Kick, pa Ban!')
