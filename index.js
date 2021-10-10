@@ -37,14 +37,14 @@ bot.on('guildMemberAdd', guildMember =>{
 });
 
 bot.on('guildMemberRemove', guildMember =>{
-    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'members');
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === '✏️| 8/3');
 
     guildMember.roles.add(welcomeRole);
     let izasao = new Discord.MessageEmbed()
     .setDescription(`<@${guildMember.user.id}> je izasao sa servera!`)
     .setColor("RANDOM")
     .setTimestamp()
-    guildMember.guild.channels.cache.get('832953372021751818').send(izasao)
+    guildMember.guild.channels.cache.get('896807399590101003').send(izasao)
 });
 
 
