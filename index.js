@@ -17,7 +17,7 @@ for(const file of commandFiles){
 
 bot.on('ready', () =>{
     console.log(`Bot je online, ulogovao sam se na ${bot.user.tag}!`);
-    bot.user.setActivity('STEFAN CIGAN | IDE GAS | $komande', { type: 'PLAYING'}).catch(console.error);
+    bot.user.setActivity('JEBEM SE ZA PARE IZA BUCE', { type: 'PLAYING'}).catch(console.error);
  
  });
  
