@@ -28,13 +28,9 @@ bot.on('guildMemberAdd', guildMember =>{
 
     guildMember.roles.add(welcomeRole);
     let dobrodosao = new Discord.MessageEmbed()
-    .setDescription(`Cao <@${guildMember.user.id}> dobrodosao/la na Gold Community:slight_smile:
-
-    Ako mozes invite svoje prijatelje/prijateljice:pray:
+    .setDescription(`Cao <@${guildMember.user.id}> dobrodosao/la u hood:slight_smile:
     
-    Udji u self roles iuzmi neke rolove
-    
-    Obavezno procitaj pravila <#<#832956329902866462> `)
+    Budi dobar da ne bi bio modar  `)
     .setColor("RED")
     .setTimestamp()
     guildMember.guild.channels.cache.get('896805983274299402').send(dobrodosao)
